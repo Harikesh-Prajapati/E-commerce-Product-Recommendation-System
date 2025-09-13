@@ -96,7 +96,7 @@ Harikesh Prajapati
 
 📧 Email: harikeshprajapati1242006@gmail.com
 
-💼 LinkedIn: harikesh-prajapati-05034027a
+💼 LinkedIn: Harikesh Prajapati
 
 💻 GitHub: Harikesh-Prajapati
 
