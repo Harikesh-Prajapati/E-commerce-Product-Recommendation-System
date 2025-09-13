@@ -96,9 +96,9 @@ Harikesh Prajapati
 
 📧 Email: harikeshprajapati1242006@gmail.com
 
-💼 LinkedIn: Harikesh Prajapati
+💼 LinkedIn: harikesh-prajapati-05034027a
 
-💻 GitHub: Your GitHub Profile
+💻 GitHub: Harikesh-Prajapati
 
 📝 License
 
