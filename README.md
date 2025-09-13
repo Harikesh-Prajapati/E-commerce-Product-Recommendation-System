@@ -1,127 +1,114 @@
 # E-commerce-Product-Recommendation-System
- E-commerce Product Recommendation System
-A production-ready recommendation engine implementing core algorithms used by Amazon, Netflix, and major e-commerce platforms. Features multiple recommendation approaches with a real-time API.
+ 🛒 E-commerce Product Recommendation System
 
-https://img.shields.io/badge/Python-3.8%252B-blue
-https://img.shields.io/badge/FastAPI-0.104%252B-green
-https://img.shields.io/badge/ML-Recommendation%2520Systems-orange
-https://img.shields.io/badge/License-MIT-lightgrey
+A production-ready recommendation engine inspired by the systems behind Amazon, Netflix, and major e-commerce platforms.
+This project implements multiple recommendation algorithms, provides a real-time API, and is built entirely with pure Python (no external dependencies).
+
+
+
+
+
 
 ✨ Features
-Multiple Algorithm Support:
 
-✅ Collaborative Filtering (User-based & Item-based)
+Multiple Algorithms
 
-✅ Matrix Factorization (SVD)
+✅ User-based Collaborative Filtering
 
-✅ Neural Collaborative Filtering
+✅ Item-based Collaborative Filtering
 
-✅ Graph-Based Recommendations (Personalized PageRank)
+✅ Hybrid Recommendation Approach
 
-Real-time API: FastAPI endpoints for instant recommendations
+✅ Popular Items Fallback
 
-Production Ready: Clean architecture, error handling, and validation
+Real-time API
 
-Sample Data Generator: Synthetic e-commerce data for testing
+Lightweight HTTP server with GET/POST endpoints
 
-Extensible Design: Easy to add new algorithms and datasets
+Ready for integration into apps or dashboards
 
-🏗️ Project Structure
-text
-ecommerce-recommender/
-├── app.py                 # FastAPI application
-├── requirements.txt       # Dependencies
-├── data/                 # Sample datasets
-├── models/               # Trained models (if any)
-├── notebooks/            # Jupyter notebooks for experimentation
-├── src/
-│   ├── data_processing.py
-│   ├── collaborative_filtering.py
-│   ├── matrix_factorization.py
-│   ├── neural_cf.py
-│   ├── graph_recommendations.py
-│   └── utils.py
-└── README.md
-🔧 Technologies Used
-Python 3.8+
+Production-Grade Design
 
-FastAPI - Modern, fast web framework
+Clean architecture, input validation, error handling
 
-Scikit-learn - Machine learning algorithms
+Scalable and easy to extend
 
-TensorFlow - Neural network implementation
+Data Simulation
 
-NetworkX - Graph algorithms
+Synthetic e-commerce user behavior with realistic patterns
 
-NumPy/SciPy - Scientific computing
+No Extra Dependencies
 
-Pandas - Data manipulation
+Runs on pure Python standard library
 
-📈 Algorithm Details
-Collaborative Filtering
-User-based and item-based approaches
+🚀 Quick Start
+1. Run the Server
+python ecommerce_recommender.py
 
-Cosine similarity metrics
+2. API Usage
+# Get recommendations for user 5
+curl "http://localhost:8000/recommend?user_id=5&top_n=10"
 
-Rating prediction system
+# POST request with JSON body
+curl -X POST "http://localhost:8000/recommend" \
+     -H "Content-Type: application/json" \
+     -d '{"user_id": 5, "top_n": 10, "method": "hybrid"}'
 
-Matrix Factorization
-Singular Value Decomposition (SVD)
+📊 API Endpoints
+Method	Endpoint	Description
+GET	/	API information
+GET	/recommend	Get recommendations for a user
+POST	/recommend	Get recommendations (with JSON body)
+GET	/stats	View system statistics
+🏗️ Project Architecture
 
-Dimensionality reduction
+User-based CF → Finds similar users and suggests items they liked
 
-Latent feature extraction
+Item-based CF → Recommends similar items to those a user already enjoyed
 
-Neural Collaborative Filtering
-Deep learning architecture
+Hybrid → Blends both methods for stronger accuracy
 
-Embedding layers for users and items
+Popular Fallback → Returns trending items when user history is limited
 
-Customizable neural network design
+🔧 Tech Stack
 
-Graph-Based Recommendations
-User-item bipartite graph construction
+Python 3.8+ (Standard Library only)
 
-Personalized PageRank algorithm
+Cosine Similarity for user/item similarity
 
-Network analysis techniques
+HTTP Server (via Python http.server)
 
-🎯 Business Impact
-This system demonstrates technologies that:
+Synthetic Data Generator for e-commerce behavior simulation
 
-Drive 35% of Amazon's revenue through recommendations
+📈 Business Value
 
-Influence 75% of Netflix viewer choices
+Recommendation engines power:
 
-Increase conversion rates by 5-30% in e-commerce
+🛍️ 35%+ of Amazon’s revenue
 
-Reduce bounce rates and improve user engagement
+📈 5–30% higher conversion rates in e-commerce
 
-📝 License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+🎯 Better personalization, reduced bounce rate, higher engagement
 
 👨‍💻 Author
+
 Harikesh Prajapati
 
-GitHub: @Harikesh-Prajapati
+📧 Email: harikeshprajapati1242006@gmail.com
 
-LinkedIn: Harikesh Prajapati
+💼 LinkedIn: harikesh-prajapati-05034027a
 
-Email: harikeshprajapati1242006@gmail.com
+💻 GitHub: Harikesh-Prajapati
+
+📝 License
+
+This project is licensed under the MIT License
+.
 
 🙏 Acknowledgments
-Inspired by recommendation systems at Amazon, Netflix, and Spotify
 
-Built with guidance from research papers and industry best practices
+Inspired by Amazon, Netflix, and Spotify recommendation systems
 
-Thanks to the open-source community for amazing libraries and tools
+Built with Python standard library for maximum portability
 
-📞 Contact
-If you have any questions, feel free to reach out!
-
-Email: harikeshprajapati1242006@gmail.com
-
-LinkedIn: Harikesh Prajapati
-
-⭐ If you find this project useful, please give it a star on GitHub!
-
+⭐ If you find this project useful, don’t forget to star the repo!
