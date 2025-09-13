@@ -114,11 +114,11 @@ Recommendation engines power:
 
 Harikesh Prajapati
 
-📧 Email: harikeshprajapati1242006@gmail.com
+📧 ## Contact
 
-💼 LinkedIn: harikesh-prajapati-05034027a
+💼 **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/harikesh-prajapati-05034027a
 
-💻 GitHub: Harikesh-Prajapati
+💻 - **GitHub**: [Your GitHub](https://github.com/Harikesh-Prajapati)  
 
 📝 License
 
