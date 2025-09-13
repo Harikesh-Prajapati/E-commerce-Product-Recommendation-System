@@ -116,7 +116,8 @@ Harikesh Prajapati
 
 📧 ## Contact
 
-💼 **LinkedIn**: [Your GitHub](https://github.com/Harikesh-Prajapati)  
+💼 **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/harikesh-prajapati-05034027a
+)  
 💻 - **GitHub**: [Your GitHub](https://github.com/Harikesh-Prajapati)  
 
 📝 License
