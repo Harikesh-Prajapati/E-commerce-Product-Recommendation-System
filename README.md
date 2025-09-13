@@ -7,7 +7,7 @@ This project implements multiple recommendation algorithms, provides a real-time
 
 
 
-
+---
 
 ✨ Features
 
@@ -41,6 +41,10 @@ No Extra Dependencies
 
 Runs on pure Python standard library
 
+
+---
+
+
 🚀 Quick Start
 1. Run the Server
 python ecommerce_recommender.py
@@ -54,12 +58,21 @@ curl -X POST "http://localhost:8000/recommend" \
      -H "Content-Type: application/json" \
      -d '{"user_id": 5, "top_n": 10, "method": "hybrid"}'
 
+
+---
+
+
 📊 API Endpoints
 Method	Endpoint	Description
 GET	/	API information
 GET	/recommend	Get recommendations for a user
 POST	/recommend	Get recommendations (with JSON body)
 GET	/stats	View system statistics
+
+
+---
+
+
 🏗️ Project Architecture
 
 User-based CF → Finds similar users and suggests items they liked
@@ -80,6 +93,9 @@ HTTP Server (via Python http.server)
 
 Synthetic Data Generator for e-commerce behavior simulation
 
+---
+
+
 📈 Business Value
 
 Recommendation engines power:
@@ -89,6 +105,10 @@ Recommendation engines power:
 📈 5–30% higher conversion rates in e-commerce
 
 🎯 Better personalization, reduced bounce rate, higher engagement
+
+
+---
+
 
 👨‍💻 Author
 
